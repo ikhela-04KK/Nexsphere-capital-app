@@ -5,7 +5,7 @@ import kaanari from "../public/logo-white.svg"
 export default function Page(){
   return (
     <>
-    <header>
+    <header className="mb-20">
           <nav className="relative px-4 py-4 flex justify-between items-center">
             {/* c'est la gestion du logo */}
             {/* leading-none : l'espace entre les lignes de texte */}
@@ -38,6 +38,41 @@ export default function Page(){
             <button className="md:block hidden border-2 border-solid border p-2">Get in touch</button>
           </nav>
   </header>
+
+  <main>
+
+    <div className="grid grid-cols-4 grid-rows-4 gap-x-40 gap-y-20">
+        <div className="col-span-2 row-span-4 p-4">
+
+          <h1 className="text-6xl font-bold mb-10">
+            Facilitating Growth Via Our Ecosystem Network 
+          </h1>
+
+          <p className="text-gray-500">Discover how our extensive global network empowers startups and fules innovation. We connect visonary founders with the reources they need to thrive</p>
+          <button className="mt-10 block px-6 py-2 mb-2 leading-loose text-sm text-center text-white font-semibold bg-custom-blue hover:bg-blue-700 rounded">Learn more</button>
+        </div>
+
+        <div className="grid grid-cols-2 grid-rows-2 col-span-2 row-span-4 p-3">
+            <div className="p-4">
+              <h1 className="text-6xl font-bold">$2B</h1>
+              <p className="text-gray-500">Assets under management</p>
+            </div>
+            <div className="p-4">
+              <h1 className="text-6xl font-bold">70</h1>
+              <p className="text-gray-500">Acquisitions by our companies</p>
+            </div>
+            <div className="p-4">
+              <h1 className="text-6xl font-bold">20+</h1>
+              <p className="text-gray-500">Nexsphere year track record</p>
+            </div>
+            <div className="p-4">
+              <h1 className="text-6xl font-bold">100+</h1>
+              <p className="text-gray-500">Company sector in which we invest</p>
+            </div>
+        </div>
+    </div>
+  </main>
+  <footer></footer>
 	
   </>
   )
