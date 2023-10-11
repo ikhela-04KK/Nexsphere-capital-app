@@ -11,7 +11,7 @@ import nexs06 from "../public/nexs06.jpg";
 
 
 export default function Page() {
-  return (
+  return ( 
     <>
       <header className="mb-20">
         <nav className="relative px-4 py-4 flex justify-between items-center">
@@ -20,7 +20,7 @@ export default function Page() {
           <div className="flex justify-center items-center ml-6">
             {/* svg logo */}
             <Image src={kaanari} alt="" />
-            <h1 className={inter.className}>Nexsphere</h1>
+            <h1 className={inter.className}>Nexspheres</h1>
           </div>
 
           {/* pour la gestion du toggle */}
