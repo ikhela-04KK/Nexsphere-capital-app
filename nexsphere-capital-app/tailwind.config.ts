@@ -1,3 +1,4 @@
+import { revalidatePath } from 'next/cache'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -15,7 +16,21 @@ const config: Config = {
       },
       backgroundColor: {
         'custom-blue': '#0f4023', // Ajoutez votre couleur personnalisée ici
+        'custom-green':'#0f4023',
       },
+        
+      gridTemplateRows: {
+        '12':'repeat(12,minmax(0,1fr))',
+        
+      },
+      gridRowStart: {
+        '8': '8',
+        '9': '9',
+        '10': '10',
+        '11': '11',
+        '12': '12',
+        '13': '13',
+      }
     },
   },
   plugins: [],

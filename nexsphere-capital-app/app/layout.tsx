@@ -2,9 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'; 
 
 // import this font since font.ts
-
-
-// mettre 
+// Mettre      
 export const metadata: Metadata = {
   title: 'Nexsphere',
   description: 'Capital Invest future',
