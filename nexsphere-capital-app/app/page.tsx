@@ -5,14 +5,25 @@ import nexs02 from "../public/nexs02.jpg";
 import nexs03 from "../public/nexs03.jpg";
 import nexs05 from "../public/nexs05.jpg";
 import nexs06 from "../public/nexs06.jpg";
-
-
+import nexs07 from "../public/nexs07.jpg";
+import nexs08 from "../public/nexs08.jpg";
+import nexs09 from "../public/nexs09.jpg";
+import nexs10 from "../public/nexs10.jpg";
+import nexs11 from "../public/nexs11.jpg";
+import nexs12 from "../public/nexs12.jpg";
+import nexs13 from "../public/nexs13.jpg";
+import arrowButton from "../public/arrow-button.svg";
+import next14 from "../public/next14.jpg";
+import next15 from "../public/next15.jpg";
+import next16 from "../public/next16.jpg";
 
 
 
 export default function Page() {
-  return ( 
+  return (
     <>
+
+      {/* le header pour la gestion du plain contenu  */}
       <header className="mb-20">
         <nav className="relative px-4 py-4 flex justify-between items-center">
           {/* c'est la gestion du logo */}
@@ -32,7 +43,6 @@ export default function Page() {
               </svg>
             </button>
           </div>
-
           {/* pour la gestion des ul>li */}
           <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
             <li><a className="text-sm text-green-500 hover:text-gray-500" href="#">Home</a></li>
@@ -46,22 +56,24 @@ export default function Page() {
           <button className="xl:block hidden border-2 border-solid p-2">Get in touch</button>
         </nav>
       </header>
+      {/* le header pour la gestion du plain contenu  */}
+
+
 
 
       {/* pour la gestion du contenu principal de la page  */}
       <main>
         {/* le premier main */}
-        <div className="grid grid-cols-4 grid-rows-4 gap-x-40 gap-y-20">
+        <div className="grid grid-cols-4 grid-rows-4 gap-x-40 gap-y-20 mb-40">
           <div className="col-span-2 row-span-4 p-1 ml-10">
-
             <h1 className="text-6xl font-bold mb-10">
               Facilitating Growth Via Our Ecosystem Network
             </h1>
-
             <p className="text-gray-500">Discover how our extensive global network empowers startups and fules innovation. We connect visonary founders with the reources they need to thrive</p>
             <button className="mt-10 block px-6 py-2 mb-2 leading-loose text-sm text-center text-white font-semibold bg-custom-blue hover:bg-blue-700 rounded">Learn more</button>
           </div>
 
+          {/* description à gauche */}
           <div className="relative grid grid-cols-2 grid-rows-2 col-span-2 row-span-4 p-3 w-2/3 h-2/3">
             <div className="p-4">
               <h1 className="text-6xl font-bold">$2B</h1>
@@ -82,151 +94,216 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="h-screen mt-14">
-          {/* deuxième main  */}
-          <div className="grid grid-cols-3">
 
-            <div className="bg-green-400">
-              <div>
-                <Image src={nexs05} alt="" />
-              </div>
-              <div className="hidden p-4">
-                <h1 className="text-6xl font-bold">$2B</h1>
-                <p className="text-gray-500">Assets under management</p>
-              </div>
+        {/* <div className="h-screen mt-14"> */}
+        {/* deuxième main  */}
+        <div className="grid grid-cols-3">
+
+          <div className="bg-green-400">
+            <div>
+              <Image src={nexs05} alt="" />
             </div>
-
-            <div className="bg-green-400">
-              <div>
-                <Image src={nexs02} alt="" />
-              </div>
-              <div className="hidden p-4">
-                <h1 className="text-6xl font-bold">70</h1>
-                <p className="text-gray-500">Acquisitions by our companies</p>
-              </div>
-            </div>
-
-            <div className="bg-green-400">
-              <div>
-                <Image src={nexs03} alt="" />
-              </div>
-              {/* cacher avant d'appliquer la logique de flouttage */}
-              <div className="hidden p-4">
-                <h1 className="text-6xl font-bold">20+</h1>
-                <p className="text-gray-500">Nexsphere year track record</p>
-              </div>
+            <div className="hidden p-4">
+              <h1 className="text-6xl font-bold">$2B</h1>
+              <p className="text-gray-500">Assets under management</p>
             </div>
           </div>
 
-          {/* troisième main */}
-          <div className="grid grid-cols-2 h-screen">
-
-            <div className="bg-custom-green p-20 text-4xl h-screen">
-
-              <h1 className="text-5xl text-bold mb-20 text-white">We are committed to fostering and supporting the next wave of groundbreaking innovators.</h1>
-
-              <h4 className="text-white text-xl mb-2">Innovations Focus</h4>
-              <p className="text-gray-400 text-lg mb-5">We are committed to fostering and supporting the next wave of groundbreaking innovators</p>
-
-              <p className="text-white mb-4">Entreprenurial Support</p>
-              <p className="text-white mb-4">Long-Term Vision</p>
-              <p className="text-white mb-4">Sustainable Impact</p>
-
+          <div className="bg-green-400">
+            <div>
+              <Image src={nexs02} alt="" />
             </div>
-
-            {/* contrôle slode description */}
-            <div className="h-screen">
-              <div className="hidden">
-                <p className="hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, adipisci esse consequuntur corrupti accusantium blanditiis cum magnam similique unde! Saepe reiciendis debitis quisquam quam unde necessitatibus eos illum repellat magni!</p>
-              </div>
-
-              <div className="h-screen ">
-                <Image src={nexs06} className="w-full h-full object-cover" alt="" />
-              </div>
+            <div className="hidden p-4">
+              <h1 className="text-6xl font-bold">70</h1>
+              <p className="text-gray-500">Acquisitions by our companies</p>
             </div>
           </div>
-          {/* contro^le */}
+
+          <div className="bg-green-400">
+            <div>
+              <Image src={nexs03} alt="" />
+            </div>
+            {/* cacher avant d'appliquer la logique de flouttage */}
+            <div className="hidden p-4">
+              <h1 className="text-6xl font-bold">20+</h1>
+              <p className="text-gray-500">Nexsphere year track record</p>
+            </div>
+          </div>
         </div>
 
-        {/* quatrième main  */}
-
+        {/* troisième main */}
         <div className="grid grid-cols-2 h-screen">
 
-          <div className="bg-white p-20 text-4xl h-screen">
-            <h1 className="text-5xl text-bold mb-20 text-black">Powering startups with a Network of Industry Pioneers </h1>
-            <p className="text-gray-400 mb-10">We collaborate with industry learders and organizations to provide startups with access to valuable ressources. Learn about our network</p>
-            <button className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-custom-green hover:bg-blue-700 rounded">Learn more</button>
+          <div className="bg-custom-green p-20 text-4xl h-screen">
+
+            <h1 className="text-5xl text-bold mb-20 text-white">We are committed to fostering and supporting the next wave of groundbreaking innovators.</h1>
+
+            <h4 className="text-white text-xl mb-2">Innovations Focus</h4>
+            <p className="text-gray-400 text-lg mb-5">We are committed to fostering and supporting the next wave of groundbreaking innovators</p>
+
+            <p className="text-white mb-4">Entreprenurial Support</p>
+            <p className="text-white mb-4">Long-Term Vision</p>
+            <p className="text-white mb-4">Sustainable Impact</p>
+
           </div>
+
+          {/* contrôle slode description */}
+          <div className="h-screen">
+            <div className="hidden">
+              <p className="hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, adipisci esse consequuntur corrupti accusantium blanditiis cum magnam similique unde! Saepe reiciendis debitis quisquam quam unde necessitatibus eos illum repellat magni!</p>
+            </div>
+            <div className="h-screen ">
+              <Image src={nexs06} className="w-full h-full object-cover" alt="" />
+            </div>
+          </div>
+        </div>
+        {/* contro^le */}
+        {/* troisième main */}
+        {/* </div> */}
+
+
+        {/* quatrième main pour la gestion des grids complexes */}
+        <div className="grid grid-cols-2 h-screen">
+          <div className="bg-white p-20 text-4xl">
+            <div className="relative top-[235px]"> {/*position: relative;top: 235px; */}
+              <h1 className="text-5xl text-bold mb-20 text-black">Powering startups with a Network of Industry Pioneers </h1>
+              <p className="text-gray-400 mb-10">We collaborate with industry learders and organizations to provide startups with access to valuable ressources. Learn about our network</p>
+              <button className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-custom-green hover:bg-blue-700 rounded">Learn more</button>
+            </div>
+          </div>
+
           {/* pour la structure des grids complexes */}
           <div className="grid grid-cols-12 grid-rows-12 h-screen bg-white">
             <div className="col-span-2 row-span-2 col-start-3 row-start-4 w-full h-full object-cover bg-green-600">
-              <Image src={nexs05} className="w-full h-full object-cover" alt="" />
+              <Image src={nexs13} className="w-full h-full object-cover" alt="" />
 
             </div>
             <div className="col-span-3 row-span-2 col-start-5 row-start-4  bg-green-600">
-              <Image src={nexs05} className="w-full h-full object-cover" alt="" />
+              <Image src={nexs07} className="w-full h-full object-cover" alt="" />
 
             </div>
 
-            <div className="col-span-3 row-span-2 col-start-8 row-start-8 bg-green-600">
-              <Image src={nexs05} className="w-full h-full object-cover" alt="" />
+            <div className="col-span-3 row-span-2 col-start-8 row-start-8 bg-custom-green text-white p-5">
+              {/* <Image src={nexs08} className="w-full h-full object-cover" alt="" /> */}
+              <h1 className="text-3xl pb-2">40+</h1>
+              <p className="text-xs">Collaborative Project Launched</p>
 
             </div>
-            <div className="col-span-3 row-span-2 col-start-8 row-start-4 bg-green-600">
-              <Image src={nexs05} className="w-full h-full object-cover" alt="" />
 
+
+            <div className="col-span-3 row-span-2 col-start-8 row-start-4 bg-custom-green text-bold text-white p-5">
+              {/* <Image src={nexs09} className="w-full h-full object-cover" alt="" /> */}
+              <h1 className="text-3xl pb-2">78%</h1>
+              <p className="text-xs">Increase in Startup Growth with partner support</p>
             </div>
+
 
             <div className="col-span-2 row-span-2 col-start-4 row-start-6 bg-green-600">
-              <Image src={nexs05} className="w-full h-full object-cover" alt="" />
+              <Image src={nexs10} className="w-full h-full object-cover" alt="" />
 
             </div>
             <div className="col-span-2 row-span-2 col-start-6 row-start-6 bg-green-600">
-              <Image src={nexs05} className="w-full h-full object-cover" alt="" />
+              <Image src={nexs11} className="w-full h-full object-cover" alt="" />
 
             </div>
-            <div className="col-span-3 row-span-2 col-start-8 row-start-6 bg-green-600">
-              <Image src={nexs05} className="w-full h-full object-cover" alt="" />
+            <div className="col-span-3 row-span-2 col-start-8 row-start-6 bg-custom-white text-black p-5">
+              {/* <Image src={nexs12} className="w-full h-full object-cover" alt="" /> */}
+              <h1 className="text-3xl pb-2">$15M</h1>
+              <p className="text-xs">Unlocking Capital through Partnership</p>
 
             </div>
             <div className="col-span-2 row-span-2 col-start-6 row-start-8 bg-green-600">
-              <Image src={nexs05} className="w-full h-full object-cover" alt="" />
-
+              <Image src={nexs08} className="w-full h-full object-cover" alt="" />
             </div>
           </div>
           {/* pour la structure des grids complexes */}
-
         </div>
         {/* quatrième main */}
 
 
-
         {/* 5ème main  */}
-        <div className="grid grid-cols-3 grid-rows-5">
-          {/* pour la description */}
-          <div></div>
-          {/* pour la desccription */}
 
-          {/* pour les images  */}
-          <div></div>
-          <div></div>
-          <div></div>
-          {/* pour les images */}
+
+        <div className="grid grid-cols-12 grid-rows-12 gap-10 h-screen bg-custom-white">
+          <div className="col-span-8 row-span-2 col-start-3 row-start-2">
+            <h1 className="text-4xl pb-4 text-custom-green font-bold">Stay Informed with Our Latest Insights and News</h1>
+            <p className="text-lg font-light">Stay corrected with line latest in the world of innovation and venture capital</p>
+          </div>
+
+
+          <div className="col-span-3 row-span-4 col-start-2 row-start-4">
+            <div className="h-4/5">
+              <Image src={next16} className="w-full h-[293px] object-cover" alt="" />
+            </div>
+            <div className="m-4 relative top-[94px]">
+              <h3 className="font-bold">How Our Hands-On Approach Benefits Portefolio Companiess</h3>
+              <div className="flex justify-between align-center content-center mt-3" >
+                <p>October 5, 2023</p>
+                {/* <p>2020</p> */}
+                <Image src={arrowButton} className="w-4" alt="" />
+              </div>
+            </div>
+          </div>
+
+
+          <div className="col-span-3 row-span-3 col-start-5 row-start-4">
+            <div className="h-2/3">
+              <Image src={next15} className="w-full h-[196px] object-cover" alt="" />
+            </div>
+            <div className="m-4 relative top-[86px] left-[15px]">
+              <h3 className="font-bold">Sustainability Spotlight: Investing in the Green Tech Revolution</h3>
+              <div className="flex justify-between align-center content-center mt-3">
+                <p>November 2, 2023</p>
+                {/* <p>2020</p> */}
+                <Image src={arrowButton} className="w-4" alt="" />
+              </div>
+            </div>
+          </div>
+
+
+
+          <div className="col-span-3 row-span-4 col-start-8 row-start-4 ">
+            <div className="h-4/5 ">
+              <Image src={next14} className="w-full h-[229px] object-cover" alt="" />
+            </div>
+            <div className="m-4 relative top-[43px]">
+              <h3 className="font-bold">Navigating the Post-Pander Landscape: Challenges and Opportunities for Startups</h3>
+              <div className="flex justify-between align-center content-center mt-3">
+                <p>October 18, 2023</p>
+                {/* <p>2020</p> */}
+                <Image src={arrowButton} className="w-4" alt="" />
+              </div>
+            </div>
+          </div>
+
 
         </div>
 
+
+
+
+        {/* fin de la 5ème main */}
+
+
         {/* contact page */}
-        <div className="grid grid-cols-2 grid-rows-1">
+        <div className="grid grid-cols-2 grid-rows-1 h-screen">
           <div className="bg-green-400">info-contact-us</div>
-          <div className="bg-green-400">Logique contact-us</div>
+
+          <div className="grid grid-cols-8 grid-rows-11 gap-1  bg-green-500">logique-contact-us
+            <div className="col-span-3 row-span-1 col-start-5 row-start-4 bg-gray-500">21</div>
+            <div className="col-span-6 row-span-1 col-start-2 row-start-2 bg-gray-500">23</div>
+            <div className="col-span-3 row-span-1 col-start-2 row-start-4 bg-gray-500">24</div>
+            <div className="col-span-6 row-span-1 col-start-2 row-start-6 bg-gray-500">25</div>
+            <div className="col-span-6 row-span-2 col-start-2 row-start-7 bg-gray-500">26</div>
+          </div>
+
         </div>
         {/* contact page */}
-
       </main >
 
       <footer>
-
       </footer>
     </>
   )
 }
+
