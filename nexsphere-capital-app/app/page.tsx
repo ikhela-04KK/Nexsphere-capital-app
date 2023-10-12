@@ -61,16 +61,16 @@ export default function Page() {
 
       {/* pour la gestion du contenu principal de la page  */}
       <main>
+
         {/* le premier main */}
         <div className="grid grid-cols-4 grid-rows-4 gap-x-40 gap-y-20 mb-40">
           <div className="col-span-2 row-span-4 p-1 ml-10">
-            <h1 className="text-6xl font-bold mb-10">
+            <h1 className="text-6xl lg:text-4xl font-bold mb-10">
               Facilitating Growth Via Our Ecosystem Network
             </h1>
             <p className="text-gray-500">Discover how our extensive global network empowers startups and fules innovation. We connect visonary founders with the reources they need to thrive</p>
             <button className="mt-10 block px-6 py-2 mb-2 leading-loose text-sm text-center text-white font-semibold bg-custom-blue hover:bg-blue-700 rounded">Learn more</button>
           </div>
-
           {/* description à gauche */}
           <div className="relative grid grid-cols-2 grid-rows-2 col-span-2 row-span-4 p-3 w-2/3 h-2/3">
             <div className="p-4">
@@ -91,7 +91,6 @@ export default function Page() {
             </div>
           </div>
         </div>
-
 
         {/* <div className="h-screen mt-14"> */}
         {/* deuxième main  */}
@@ -341,65 +340,65 @@ export default function Page() {
 
 
 
-        <footer
-          className="bg-black text-center text-white lg:text-left p-20">
-    
-          <div className="mx-6 py-10 text-center md:text-left">
-            <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-              <div className="">
-                <div className="flex justify-start align-center">
-                  <Image src={kaanari} alt="" />
-                  <h1 className={inter.className}>Nexspheres</h1>
-                </div>
-                <p className="p-6">Faciliting growing Via Our Econosystem Network</p>
+      <footer
+        className="bg-black text-center text-white lg:text-left p-20">
+
+        <div className="mx-6 py-10 text-center md:text-left">
+          <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div className="">
+              <div className="flex justify-start align-center">
+                <Image src={kaanari} alt="" />
+                <h1 className={inter.className}>Nexspheres</h1>
               </div>
-              <div className="">
-                <p className="mb-4">
-                  <a href="#!" className=" ">Angular</a>
-                </p>
-                <p className="mb-4">
-                  <a href="#!" className=" ">React</a>
-                </p>
-                <p className="mb-4">
-                  <a href="#!" className=" ">Vue</a>
-                </p>
-                <p>
-                  <a href="#!" className=" ">Laravel</a>
-                </p>
-              </div>
-              <div className="">
-                <p className="mb-4">
-                  <a href="#!" className="">Pricing</a
-                  >
-                </p>
-                <p className="mb-4">
-                  <a href="#!" className=" ">Settings</a>
-                </p>
-                <p className="mb-4">
-                  <a href="#!" className=" ">Orders</a>
-                </p>
-                <p>
-                  <a href="#!" className=" ">Help</a>
-                </p>
-              </div>
-              <div className="">
-                <p className="mb-4">
-                  <a href="#!" className=" ">Pricing</a
-                  >
-                </p>
-                <p className="mb-4">
-                  <a href="#!" className=" ">Settings</a>
-                </p>
-                <p className="mb-4">
-                  <a href="#!" className=" ">Orders</a>
-                </p>
-                <p>
-                  <a href="#!" className=" ">Help</a>
-                </p>
-              </div>
+              <p className="p-6">Faciliting growing Via Our Econosystem Network</p>
+            </div>
+            <div className="">
+              <p className="mb-4">
+                <a href="#!" className=" ">Angular</a>
+              </p>
+              <p className="mb-4">
+                <a href="#!" className=" ">React</a>
+              </p>
+              <p className="mb-4">
+                <a href="#!" className=" ">Vue</a>
+              </p>
+              <p>
+                <a href="#!" className=" ">Laravel</a>
+              </p>
+            </div>
+            <div className="">
+              <p className="mb-4">
+                <a href="#!" className="">Pricing</a
+                >
+              </p>
+              <p className="mb-4">
+                <a href="#!" className=" ">Settings</a>
+              </p>
+              <p className="mb-4">
+                <a href="#!" className=" ">Orders</a>
+              </p>
+              <p>
+                <a href="#!" className=" ">Help</a>
+              </p>
+            </div>
+            <div className="">
+              <p className="mb-4">
+                <a href="#!" className=" ">Pricing</a
+                >
+              </p>
+              <p className="mb-4">
+                <a href="#!" className=" ">Settings</a>
+              </p>
+              <p className="mb-4">
+                <a href="#!" className=" ">Orders</a>
+              </p>
+              <p>
+                <a href="#!" className=" ">Help</a>
+              </p>
             </div>
           </div>
-        </footer>
+        </div>
+      </footer>
     </>
   )
 }
