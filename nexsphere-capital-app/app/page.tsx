@@ -7,10 +7,8 @@ import nexs05 from "../public/nexs05.jpg";
 import nexs06 from "../public/nexs06.jpg";
 import nexs07 from "../public/nexs07.jpg";
 import nexs08 from "../public/nexs08.jpg";
-import nexs09 from "../public/nexs09.jpg";
 import nexs10 from "../public/nexs10.jpg";
 import nexs11 from "../public/nexs11.jpg";
-import nexs12 from "../public/nexs12.jpg";
 import nexs13 from "../public/nexs13.jpg";
 import arrowButton from "../public/arrow-button.svg";
 import next14 from "../public/next14.jpg";
@@ -63,16 +61,16 @@ export default function Page() {
 
       {/* pour la gestion du contenu principal de la page  */}
       <main>
+
         {/* le premier main */}
         <div className="grid grid-cols-4 grid-rows-4 gap-x-40 gap-y-20 mb-40">
           <div className="col-span-2 row-span-4 p-1 ml-10">
-            <h1 className="text-6xl font-bold mb-10">
+            <h1 className="text-6xl lg:text-4xl font-bold mb-10">
               Facilitating Growth Via Our Ecosystem Network
             </h1>
             <p className="text-gray-500">Discover how our extensive global network empowers startups and fules innovation. We connect visonary founders with the reources they need to thrive</p>
             <button className="mt-10 block px-6 py-2 mb-2 leading-loose text-sm text-center text-white font-semibold bg-custom-blue hover:bg-blue-700 rounded">Learn more</button>
           </div>
-
           {/* description à gauche */}
           <div className="relative grid grid-cols-2 grid-rows-2 col-span-2 row-span-4 p-3 w-2/3 h-2/3">
             <div className="p-4">
@@ -93,7 +91,6 @@ export default function Page() {
             </div>
           </div>
         </div>
-
 
         {/* <div className="h-screen mt-14"> */}
         {/* deuxième main  */}
@@ -286,22 +283,121 @@ export default function Page() {
 
 
         {/* contact page */}
-        <div className="grid grid-cols-2 grid-rows-1 h-screen">
-          <div className="bg-green-400">info-contact-us</div>
 
-          <div className="grid grid-cols-8 grid-rows-11 gap-1  bg-green-500">logique-contact-us
-            <div className="col-span-3 row-span-1 col-start-5 row-start-4 bg-gray-500">21</div>
-            <div className="col-span-6 row-span-1 col-start-2 row-start-2 bg-gray-500">23</div>
-            <div className="col-span-3 row-span-1 col-start-2 row-start-4 bg-gray-500">24</div>
-            <div className="col-span-6 row-span-1 col-start-2 row-start-6 bg-gray-500">25</div>
-            <div className="col-span-6 row-span-2 col-start-2 row-start-7 bg-gray-500">26</div>
+        <div className="grid grid-cols-2 h-screen">
+          <div className="grid grid-cols-10 grid-rows-10 gap-2 bg-white">
+            <h1 className="col-span-8 row-span-2 col-start-2 row-start-2 font-bold text-6xl text-custom-green mb-10">We'd love to hear from you</h1>
+            <div className=" col-span-8 row-span-2 col-start-2 row-start-4 ">
+              <p className="font-light">Email Address</p>
+              <p className="text-custom-green">+1 (123) 456-7890</p>
+            </div>
+
+            <div className="col-span-8 row-span-2 col-start-2 row-start-6">
+              <p className="font-light">Headquarters Address</p>
+              <p className="text-custom-green">123 Main Street, Suite 456, Cityville, 12345</p>
+            </div>
+
+            <div className="col-span-8 row-span-2 col-start-2 row-start-8">
+              <p className="font-light">Business Hours</p>
+              <p className="text-custom-green">Monday-Friday</p>
+              <p className="text-custom-green">9:00 AM to 5:00 PM</p>
+            </div>
           </div>
 
+          <div className="bg-[#f0f1ec] dark:bg-gray-900 text-custom-green p-90">
+            <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md ">
+              <h2 className="mb-6 text-4xl tracking-tight font-extrabold text-left text-gray-900 dark:text-white ">Contact Us</h2>
+              <form action="#" className="space-y-8">
+                <div>
+                  <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Full name</label>
+                  <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required />
+                </div>
+                <div className="flex justify-between">
+                  <label htmlFor="subject" className="w-5/12 block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email adress
+                    <input type="text" id="subject" className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required />
+                  </label>
+                  <label htmlFor="subject" className="w-5/12 block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Phone number
+                    <input type="text" id="subject" className=" block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required />
+                  </label>
+                </div>
+                <div>
+                  <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Company name</label>
+                  <input type="text" id="subject" className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required />
+                </div>
+                <div className="sm:col-span-2">
+                  <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Message</label>
+                  <textarea id="message" rows="6" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type="submit" className="w-1/2 block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-custom-green hover:bg-blue-700 rounded">Send message</button>
+              </form>
+            </div>
+          </div>
         </div>
+
+
         {/* contact page */}
       </main >
 
-      <footer>
+
+
+      <footer
+        className="bg-black text-center text-white lg:text-left p-20">
+
+        <div className="mx-6 py-10 text-center md:text-left">
+          <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div className="">
+              <div className="flex justify-start align-center">
+                <Image src={kaanari} alt="" />
+                <h1 className={inter.className}>Nexspheres</h1>
+              </div>
+              <p className="p-6">Faciliting growing Via Our Econosystem Network</p>
+            </div>
+            <div className="">
+              <p className="mb-4">
+                <a href="#!" className=" ">Angular</a>
+              </p>
+              <p className="mb-4">
+                <a href="#!" className=" ">React</a>
+              </p>
+              <p className="mb-4">
+                <a href="#!" className=" ">Vue</a>
+              </p>
+              <p>
+                <a href="#!" className=" ">Laravel</a>
+              </p>
+            </div>
+            <div className="">
+              <p className="mb-4">
+                <a href="#!" className="">Pricing</a
+                >
+              </p>
+              <p className="mb-4">
+                <a href="#!" className=" ">Settings</a>
+              </p>
+              <p className="mb-4">
+                <a href="#!" className=" ">Orders</a>
+              </p>
+              <p>
+                <a href="#!" className=" ">Help</a>
+              </p>
+            </div>
+            <div className="">
+              <p className="mb-4">
+                <a href="#!" className=" ">Pricing</a
+                >
+              </p>
+              <p className="mb-4">
+                <a href="#!" className=" ">Settings</a>
+              </p>
+              <p className="mb-4">
+                <a href="#!" className=" ">Orders</a>
+              </p>
+              <p>
+                <a href="#!" className=" ">Help</a>
+              </p>
+            </div>
+          </div>
+        </div>
       </footer>
     </>
   )
