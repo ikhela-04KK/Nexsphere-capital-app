@@ -7,7 +7,7 @@ export default function SecFive() {
     return (
         <>
             <div className="grid grid-cols-1 grid-rows-4 lg:grid-cols-2 xl:grid-cols-12 sm:grid-cols-2 sm:grid-rows-2 xl:grid-rows-12 xl:gap-10 bg-custom-white xl:relative xl:h-screen ">
-                <div className="xl:col-span-8 col-start-1 row-start-1 sm:row-span-1 sm:col-start-1 sm:col-span-2 xl:row-span-2 xl:col-start-3 xl:row-start-2">
+                <div className="lg:col-start-1 lg:col-span-2 lg:row-start-1 xl:col-span-8 col-start-1 row-start-1 sm:row-span-1 sm:col-start-1 sm:col-span-2 xl:row-span-2 xl:col-start-3 xl:row-start-2">
                     <h1 className="text-4xl pb-4 text-custom-green font-bold">
                         Stay Informed with Our Latest Insights and News
                     </h1>
