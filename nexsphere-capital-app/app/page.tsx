@@ -26,7 +26,7 @@ export default function Page() {
         <nav className="relative px-4 py-4 flex justify-between items-center">
           {/* c'est la gestion du logo */}
           {/* leading-none : l'espace entre les lignes de texte */}
-          <div className="flex justify-center items-center ml-6">
+          <div className="flex justify-center items-center lg:ml-6 ml-4">
             {/* svg logo */}
             <Image src={kaanari} alt="" />
             <h1 className={inter.className}>Nexspheres</h1>
@@ -63,39 +63,37 @@ export default function Page() {
       <main>
 
         {/* le premier main */}
-        <div className="grid grid-cols-4 grid-rows-4 gap-x-40 gap-y-20 mb-40">
-          <div className="col-span-2 row-span-4 p-1 ml-10">
-            <h1 className="text-6xl lg:text-4xl font-bold mb-10">
+        <div className="relative bottom-[70px] grid lg:grid-cols-4 lg:grid-rows-4 lg:gap-x-40 lg:gap-y-20 lg:mb-40 mb-30 grid-cols-2 grid-rows-1 ">
+          <div className="col-span-2 row-span-4 p-1 lg:ml-10 m-6 lg:h-1/3 ">
+            <h1 className="text-3xl lg:text-4xl font-bold mb-10">
               Facilitating Growth Via Our Ecosystem Network
             </h1>
             <p className="text-gray-500">Discover how our extensive global network empowers startups and fules innovation. We connect visonary founders with the reources they need to thrive</p>
-            <button className="mt-10 block px-6 py-2 mb-2 leading-loose text-sm text-center text-white font-semibold bg-custom-blue hover:bg-blue-700 rounded">Learn more</button>
+            <button className="mt-10 block px-6 py-2 mb-2 leading-loose text-sm text-center text-white font-semibold bg-custom-green hover:bg-blue-700 rounded">Learn more</button>
           </div>
           {/* description à gauche */}
-          <div className="relative grid grid-cols-2 grid-rows-2 col-span-2 row-span-4 p-3 w-2/3 h-2/3">
+          <div className="relative bottom-[11px] grid grid-cols-2 grid-rows-2 col-span-2 lg:row-span-4 p-3 lg:w-2/3 lg:h-2/3 text-sm md:text-base lg:text-lg max-w-screen ">
             <div className="p-4">
-              <h1 className="text-6xl font-bold">$2B</h1>
-              <p className="text-gray-500">Assets under management</p>
+              <h1 className="font-bold text-2xl">$2B</h1>
+              <p className="text-gray-500 text-base pt-[14px] w-[75%] ">Assets under management</p>
             </div>
             <div className="p-4">
-              <h1 className="text-6xl font-bold">70</h1>
-              <p className="text-gray-500">Acquisitions by our companies</p>
+              <h1 className="font-bold text-2xl">70</h1>
+              <p className="text-gray-500 text-base pt-[14px] w-[75%]">Acquisitions by our companies</p>
             </div>
             <div className="p-4">
-              <h1 className="text-6xl font-bold">20+</h1>
-              <p className="text-gray-500">Nexsphere year track record</p>
+              <h1 className="font-bold text-2xl">20+</h1>
+              <p className="text-gray-500 text-base pt-[14px] w-[75%]">Nexsphere year track record</p>
             </div>
             <div className="p-4">
-              <h1 className="text-6xl font-bold">100+</h1>
-              <p className="text-gray-500">Company sector in which we invest</p>
+              <h1 className="font-bold text-2xl">100+</h1>
+              <p className="text-gray-500 text-base pt-[14px] w-[75%]">Company sector in which we invest</p>
             </div>
           </div>
-        </div>
-
+        </div
         {/* <div className="h-screen mt-14"> */}
         {/* deuxième main  */}
         <div className="grid grid-cols-3">
-
           <div className="bg-green-400">
             <div>
               <Image src={nexs05} alt="" />
@@ -130,9 +128,7 @@ export default function Page() {
 
         {/* troisième main */}
         <div className="grid grid-cols-2 h-screen">
-
           <div className="bg-custom-green p-20 text-4xl h-screen">
-
             <h1 className="text-5xl text-bold mb-20 text-white">We are committed to fostering and supporting the next wave of groundbreaking innovators.</h1>
 
             <h4 className="text-white text-xl mb-2">Innovations Focus</h4>
