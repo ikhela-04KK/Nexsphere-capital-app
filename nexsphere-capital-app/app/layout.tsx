@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'; 
+import { inter } from "./font";
 
 // import this font since font.ts
 // Mettre      
