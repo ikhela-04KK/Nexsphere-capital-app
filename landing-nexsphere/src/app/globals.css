@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --foreground-rgb: 5, 27, 13;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 250, 244;
+}
+
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-end-rgb));
+  /* padding-bottom:20px; */
+  /* padding-top:22px; */
+}
+
+.main-container{
+  @apply md:px-[50px] sm:px-[30px] px-[21px] max-w-[1440px] mx-auto py-[30px]
+}
+@media (min-width: 500px) and (max-width:1023px) {
+    .p-container{
+      width: 48%;
+    }
+}
